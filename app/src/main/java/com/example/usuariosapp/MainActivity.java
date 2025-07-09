@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         campoEmail = findViewById(R.id.campoEmail);
         botonGuardar = findViewById(R.id.botonGuardar);
         verUsuarios = findViewById(R.id.verUsuarios);
+        dbHelper = new DBHelper(this);
 
         botonGuardar.setOnClickListener(v -> {
             String nombre = campoNombre.getText().toString();
